@@ -2,12 +2,14 @@
 #!/bin/bash   #
 # By: i3-Arch #
 ###############
-CHOICE=13
-until [ $CHOICE -eq 12 ]
+red=$(tput setaf 1)
+white=$(tput setaf 7)
+CHOICE=14
+until [ $CHOICE -eq 13 ]
 do
 clear
-echo Select Menu Item
-echo
+echo "${white} Select Menu Item"
+echo "${white}"
 echo  " 1) Show partitions"
 echo  " 2) Show Top CPU Processes"
 echo  " 3) show external ip address"
@@ -19,7 +21,8 @@ echo  " 8) Show Connections with Netstat ( Uses Sudo ) "
 echo  " 9) Try This With Terminal Full Screen ! " 
 echo "10) Show More art " 
 echo "11) 3 Wishes ??? "
-echo "12) Exit"
+echo "12) Author Info "
+echo "13) Exit"
 echo
 read CHOICE
 case $CHOICE in
@@ -34,10 +37,11 @@ case $CHOICE in
 9) bash ./test | tail -30 ;;
 10) bash ./test | head -11 ;;
 11) sed -n '22,47p' test ;;
-12) echo NO, Please dont go ;;
+12) echo "${red}This was created by ME ( Jeremy Marlow ) for my UNIX/LINUX class " ;;
+13) echo "NO, Please dont go" ;;
 *) echo invalid option
 esac
 echo
-echo "Press Enter to Continue"
+echo " ${white} Press Enter to Continue"
 read Enter
 done
