@@ -1,0 +1,8 @@
+#!/bin/bash
+# By: i3-Arch for NOS-120
+# Last Updated Feb. 23, 2014
+clear
+wget https://github.com/i3-Arch/School/archive/master.zip && sleep 2
+unzip master*
+cd School-master
+sudo chmod 741 OPENSUSE-version
