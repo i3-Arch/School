@@ -16,7 +16,7 @@ clear
 	echo -e " \033[1m ${red}1)${white}\033[1m Show Partitions \033[0m"
 	echo -e " \033[1m ${red}2)${white}\033[1m Show Top CPU Processes \033[0m"
 	echo -e " \033[1m ${red}3)${white}\033[1m show External IP Address and Hostname\033[0m"
-	echo -e " \033[1m ${red}4)${white}\033[1m Show Home and List 'ALL' Contents\033[0m"
+	echo -e " \033[1m ${red}4)${white}\033[1m Show Home and List 'ALL' Contents  ( Press q to quit )\033[0m"
 	echo -e " \033[1m ${red}5)${white}\033[1m Show Proc Info\033[0m"
 	echo -e " \033[1m ${red}6)${white}\033[1m Show All 'who' info\033[0m"
 	echo -e " \033[1m ${red}7)${white}\033[1m Show Current Iptable Rules  ( Uses Sudo )\033[0m "
