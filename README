@@ -18,9 +18,8 @@
 
 { SECOND OPTION }
 
-(   you can use the 'lazy' script in the repo to wget an unzip files )
+(   you can use the 'lazy' script in the repo to wget + unzip files and then  cd and chmod 741 it )
 			
-			then just `cd School-master` and `chmod 741 script`
 	
 			then run it by `./script`  
 
