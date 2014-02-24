@@ -4,3 +4,5 @@
 clear
 wget https://github.com/i3-Arch/School/archive/master.zip && sleep 2
 unzip master.zip
+cd School-master
+sudo chmod 741 script
