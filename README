@@ -6,6 +6,8 @@
 ##   * My First Script *	 ##
 ###################################
 
+{ FIRST OPTION }
+
 1. Make sure test and script are in same directory
 
 2. bash ./script    or    chmod u+x script   then ./script 
@@ -14,9 +16,13 @@
 
 4. PROFIT
 
+{ SECOND OPTION }
 
-
-
+(   you can use the 'lazy' script in the repo to wget an unzip files )
+			
+			then just `cd School-master` and `chmod 741 script`
+	
+			then run it by `./script`  
 
 	
 
