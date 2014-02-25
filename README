@@ -6,23 +6,37 @@
 ##   * My First Script *	 ##
 ###################################
 
-{ FIRST OPTION }
+{ HOW TO DOWNLOAD AND RUN }
 
-1. Make sure test and script are in same directory
 
-2. bash ./script    or    chmod u+x script   then ./script 
+1. Download 'lazy' script by running 'wget https://github.com/i3-Arch/School/blob/master/lazy'
+ 	
+	If running OpenSuse download like so  ~~~>   wget https://github.com/i3-Arch/School/blob/master/lazyOPENSUSE
+
+
+2. Then run          source lazyOPENSUSE         or       source lazy        ( depending on what your running ofc ) 
 
 3. ????????????
 
 4. PROFIT
 
-{ SECOND OPTION }
 
-(   you can use the 'lazy' script in the repo to wget + unzip files and then  cd and chmod 741 it )
+The 'lazy' script will download
+
+	the script and file it needs
+
+		the script will use wget
+		
+				then unzip files
+				
+				then rm .zip
+
+		then cd and chmod 741 
+the script and ... then it runs it
 			
-	
-			then run it by `./script`  
 
+
+-------- = = = =  CHECK OUT MY i3 config for Archlinux = = = = ---------
 	
 
 		
@@ -36,3 +50,4 @@
                                            
 
 
+-------- = = = =  CHECK OUT MY i3 config for Archlinux = = = = ---------
