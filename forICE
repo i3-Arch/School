@@ -1,0 +1,28 @@
+#####################
+#!/bin/bash	        # 
+# 	BY : i3-Arch	#
+# JUST FOR YOU ICE  #
+#####################
+FUCKS=9999
+BRICKS=1
+Linux=`uname -a`
+
+if [ $FUCKS -lt 1 ]    ## lt = less than  gt = greater than
+	then
+	  echo "YOU HAVE NO FUCKS TO GIVE"
+else
+  if [ $FUCKS -gt 0 ]
+then
+          echo "YOU HAZ FUCK TO GIVE FGGT"
+else
+	  echo "YOU FUCKIN RETARD"
+  fi
+fi
+	if [ $BRICKS -gt 0 ]
+then
+	echo "BRICKS WERE SHAT.... AMRITE ?!?!?!?"
+	fi
+echo
+echo -e " Go fap to this and learn some bash while you wait to recieve my D"
+echo
+echo -e " $Linux "
