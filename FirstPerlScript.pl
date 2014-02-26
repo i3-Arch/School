@@ -25,6 +25,6 @@ if ($age >= 18)		{
 }
 
 else { 
-
+	print $clear ;
 	print " y u no 18, why you $age \n" ;
 }
