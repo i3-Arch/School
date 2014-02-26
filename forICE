@@ -5,8 +5,8 @@
 FUCKS=999999
 BRICKS=999999
 Linux=`uname -r`
-IP=`curl wtfismyip.com/text`
-
+PWD=`pwd` 	## THIS IS A COMMENT
+WAIT=`sleep 1`
 if [ $FUCKS -lt 1 ]    ## lt = less than  gt = greater than
 then
 		echo
@@ -33,10 +33,20 @@ echo -e " 	Go fap to this and learn some bash while you wait to recieve my D"
 echo
 echo -e " 	You're Running $Linux kernel, using the hostname $HOSTNAME"
 echo
-echo -e "	With --> $IP ip address."
+echo -e "	Working Directory is $PWD."
 echo
 echo -e "	Just wait till you see MY Dick" > THE-D 
 echo
-echo -e " 	CHECK THE-D in your current DIRECTORY... YOU CAN CALL THIS SURPRISE SEX"
 
+$WAIT ;
+
+echo -e " P" $WAIT ; echo " U" $WAIT ; echo " T" $WAIT ;
+echo
+echo -e " YOUR MIND "
+echo
+echo -e " T" $WAIT ; echo " O" $WAIT ;
+echo
+echo -e " IT "
+echo
+echo -e "       CHECK THE-D in your current DIRECTORY... YOU CAN CALL THIS SURPRISE SEX"
 exit 0
