@@ -33,4 +33,10 @@ echo -e " 	Go fap to this and learn some bash while you wait to recieve my D"
 echo
 echo -e " 	You're Running $Linux kernel, using the hostname $HOSTNAME"
 echo
-echo -e "	With --> $IP ip address."    
+echo -e "	With --> $IP ip address."
+echo
+echo -e "	Just wait till you see MY Dick" > THE-D 
+echo
+echo -e " 	CHECK THE-D in your current DIRECTORY... YOU CAN CALL THIS SURPRISE SEX"
+
+exit 0
