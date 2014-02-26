@@ -3,34 +3,34 @@
 # JUST FOR YOU ICE  #
 #####################
 FUCKS=999999
-BRICKS=9999999999
+BRICKS=999999
 Linux=`uname -r`
 IP=`curl wtfismyip.com/text`
 
 if [ $FUCKS -lt 1 ]    ## lt = less than  gt = greater than
 then
-			echo
-		  	echo "YOU HAVE NO FUCKS TO GIVE"
+		echo
+		echo "YOU HAVE NO FUCKS TO GIVE"
 else
 	if [ $FUCKS -gt 2 ]
-then
+	then
 			echo
           	echo "YOU HAZ FUCKZ TO GIVE FGGT"
-else
+	else
 		  	echo "YOU FUCKIN RETARD"
 	fi
 fi
 if [ $BRICKS -gt 2 ]
 then
-		echo
-		echo "BRICKS WERE SHAT.... AMRITE ?!?!?!?"
+	echo
+	echo "BRICKS WERE SHAT.... AMRITE ?!?!?!?"
 else
-		echo
-		echo "Not a brick was to be shat my kind sir"
+	echo
+	echo "Not a brick was to be shat my kind sir"
 fi
-		echo
-		echo -e " 	Go fap to this and learn some bash while you wait to recieve my D"
-		echo
-		echo -e " 	You're Running $Linux kernel, using the hostname $HOSTNAME"
-		echo
-		echo -e "	With --> $IP ip address."
+echo
+echo -e " 	Go fap to this and learn some bash while you wait to recieve my D"
+echo
+echo -e " 	You're Running $Linux kernel, using the hostname $HOSTNAME"
+echo
+echo -e "	With --> $IP ip address."    
