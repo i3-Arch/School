@@ -1,0 +1,117 @@
+#!/bin/bash
+#
+#  By: i3-Arch
+#	Ice i hope this helps with if else statements    :3
+################
+red=$(tput setaf 1)
+white=$(tput setaf 7)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+clear
+	echo
+	echo ${white}
+	echo " What is your favorite LINUX distro "
+read DISTRO
+		echo ${yellow}
+		echo " So you like $DISTRO huh? "
+		echo
+if [ $DISTRO == archlinux ]
+then
+	echo
+	echo " DAT MASTER RACE BROSEF ! "
+			elif [ $DISTRO == arch ] 
+				then
+					echo
+					echo " DAT MASTER RACE BROSEF ! "
+					echo
+		elif [ $DISTRO == ubuntu ]
+			then
+				echo
+				echo -e You should commit suicide `xdg-open http://meatspin.com > /dev/null 2>&1`  
+				echo
+	elif [ $DISTRO == mint ]
+		then
+			echo
+			echo -e You are such a fggt... `xdg-open http://meatspin.com > /dev/null 2>&1`
+else 
+	echo 
+	echo " Seems un-exciting... Archlinux is master-race bro"
+	echo
+fi
+		echo ${white}
+		echo " How old are you ? " 
+		echo ${yellow} 
+read AGE				
+			echo ${red}
+			echo " So you are $AGE ? " 	### This is a comment 
+			echo
+	if [ $AGE -lt 18 ]
+		then
+			echo
+			echo " Your age is scary...  "
+			echo
+				elif [ $AGE -gt 28 ]            ## showing diff ways to do things   ....  -gt is greater than     -lt   is less than   and -eq is equal
+					then
+			       		echo
+       			   		echo -e ${yellow} you old ass ho i aint drunk
+				   		echo
+			elif [ $AGE -eq 18 ] 
+				then 
+					echo 
+					echo " Daaaaaamn  let me tap that ... if you look good ofc "
+					echo
+		else
+			echo -e ehh... the age seems ok  ... sup ... maybe we should get outta here yo
+	fi
+			if [ $AGE == 22 ]      		
+			then
+				echo
+				echo -e ${yellow} Cool im 22 also !
+				echo
+	else					
+		echo
+		echo -e ${white}  anywayz 
+		echo
+			fi							### End of first ' if ' statement \\ notice      fi = if backwards
+				echo ${white}
+				echo -e So do you understand how to create a bash script yet? ${yellow}   ##  ( LOWERCASE ) Acceptable answers here are    yes  and  no
+				echo
+read ANSWER
+if [ $ANSWER == yes ]
+then
+		echo ${green}
+		echo " Prove it then fggt? "
+		echo " Write me one..... "
+		echo
+	elif [ $ANSWER == no ]
+		then
+			echo
+			echo " You should start practicing then fggt"
+			echo
+		elif [ $ANSWER == YES ]
+			then 
+				echo
+				echo " Huehuehue... write me one then"
+				echo
+	else
+		echo
+		echo -e ${yellow} To bad... we couldve had somethin... 
+fi
+				echo
+				echo -e ${white} So whats your name? ${yellow} 
+read NAME
+			echo
+			echo -e ${white}  Well this is the end of this script $NAME ....
+if [ $NAME == ice ]
+	then
+		echo
+		echo -e ${green} bye $NAME you fggt
+		echo
+	elif [ $NAME == iceland ]
+		then
+			echo
+			echo -e ${yellow} u can fap to me later $NAME .... 
+else
+	echo 
+	echo -e ${red} Fggt
+fi
