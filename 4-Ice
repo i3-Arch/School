@@ -10,8 +10,8 @@ yellow=$(tput setaf 3)
 clear
 	echo
 	echo ${white}
-	echo " What is your favorite LINUX distro "
-read DISTRO
+	echo " What is your favorite LINUX distro "		## first comment right here :)
+read DISTRO								## read waits for user input
 		echo ${yellow}
 		echo " So you like $DISTRO huh? "
 		echo
@@ -27,23 +27,23 @@ then
 		elif [ $DISTRO == ubuntu ]
 			then
 				echo
-				echo -e You should commit suicide `xdg-open http://meatspin.com > /dev/null 2>&1`  
+				echo -e You should commit suicide `xdg-open http://meatspin.com > /dev/null 2>&1`    ## This will open a browser huehuehue
 				echo
-	elif [ $DISTRO == mint ]
+	elif [ $DISTRO == mint ]					## Multiple elif statements can be used :)
 		then
 			echo
 			echo -e You are such a fggt... `xdg-open http://meatspin.com > /dev/null 2>&1`
-else 
+else 				### This is what will happen if your if and elif statements are false... its called an else statement
 	echo 
 	echo " Seems un-exciting... Archlinux is master-race bro"
 	echo
-fi
+fi		### This closes the if statement we opened earlier
 		echo ${white}
 		echo " How old are you ? " 
 		echo ${yellow} 
 read AGE				
 			echo ${red}
-			echo " So you are $AGE ? " 	### This is a comment 
+			echo " So you are $AGE ? "  
 			echo
 	if [ $AGE -lt 18 ]
 		then
@@ -72,7 +72,7 @@ read AGE
 		echo
 		echo -e ${white}  anywayz 
 		echo
-			fi							### End of first ' if ' statement \\ notice      fi = if backwards
+			fi							
 				echo ${white}
 				echo -e So do you understand how to create a bash script yet? ${yellow}   ##  ( LOWERCASE ) Acceptable answers here are    yes  and  no
 				echo
@@ -102,7 +102,7 @@ fi
 read NAME
 			echo
 			echo -e ${white}  Well this is the end of this script $NAME ....
-if [ $NAME == ice ]
+if [ $NAME == ice ]			## Here we actually specify what to do if the user enters ' ice ' as the name
 	then
 		echo
 		echo -e ${green} bye $NAME you fggt
