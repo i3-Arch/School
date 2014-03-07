@@ -10,7 +10,7 @@ yellow=$(tput setaf 3)
 clear
 	echo
 	echo ${white}
-	echo " What is your favorite LINUX distro "		## first comment right here :)
+	echo " What linux distro would you use first?  Choices are : arch , mint , ubuntu "		## first comment right here :)
 read DISTRO								## read waits for user input
 		echo ${yellow}
 		echo " So you like $DISTRO huh? "
@@ -61,7 +61,7 @@ read AGE
 					echo " Daaaaaamn  let me tap that ... if you look good ofc "
 					echo
 		else
-			echo -e ehh... the age seems ok  ... sup ... maybe we should get outta here yo
+			echo " age seems about right.. i might hit it.. ... maybe we should get outta here yo "
 	fi
 			if [ $AGE == 22 ]      		
 			then
