@@ -1,0 +1,61 @@
+#!/bin/bash
+#
+# 	BY: i3-Arch
+#
+###################
+clear
+	echo
+	echo " I made this to haz pretty syntax "
+	echo
+	echo " Enter in a number "
+	echo
+read NUMBER
+		echo
+		echo " The Number You Entered is $NUMBER  "
+		echo
+if [ $NUMBER -eq 3 ]
+			then
+				echo
+				echo " You chose 3 for some reason "
+				echo
+		elif [ $NUMBER -eq 9999 ]
+				then
+					echo
+					echo " I see what you did there... It's over nine thousand !"
+					echo
+	else
+		echo
+		echo " Your number is sort of bland bro... "
+fi
+echo
+echo " Enter in a letter "
+read LETTER
+		if [ $LETTER == a ]
+			then
+				echo
+				echo " So you like the a... y u no like the D"
+				echo
+		elif	[ $LETTER == d ]
+			then
+					echo
+					echo " I knew you wanted the D "
+					echo
+			elif [ $LETTER == D ]
+				then
+						echo
+						echo " I knew you wanted the D"
+						echo
+		else
+			echo
+			echo " Should've picked the D "
+			echo
+	if [ $LETTER == 1 ]
+		then
+			echo
+			echo " WTF are you retarded ?  I said a letter"
+			echo
+	else
+		echo
+		echo " Also cox "
+		fi
+	fi
