@@ -2,32 +2,38 @@
 #  BY : i3-Arch	    #
 # JUST FOR YOU ICE  #
 #####################
-FUCKS=999999
-BRICKS=999999
 Linux=`uname -r`
 PWD=`pwd` 	## THIS IS A COMMENT
 WAIT=`sleep 1`
+clear
+echo " How many fucks do u haz to give? "
+read FUCKS
 if [ $FUCKS -lt 1 ]    ## lt = less than  gt = greater than
-then
+	then
 		echo
 		echo "YOU HAVE NO FUCKS TO GIVE"
 else
 	if [ $FUCKS -gt 2 ]
-	then
+		then
 			echo
-          	echo "YOU HAZ FUCKZ TO GIVE FGGT"
-	else
-		  	echo "YOU FUCKIN RETARD"
+          		echo "YOU HAZ FUCKZ TO GIVE FGGT"
+			echo
+		else
+		 echo "YOU FUCKIN RETARD"
 	fi
 fi
-if [ $BRICKS -gt 2 ]
-then
-	echo
-	echo "BRICKS WERE SHAT.... AMRITE ?!?!?!?"
-else
-	echo
-	echo "Not a brick was to be shat my kind sir"
-fi
+echo
+echo " How many bricks u haz to shit? "
+echo
+read BRICKS
+		if [ $BRICKS -gt 2 ]
+			then
+				echo
+				echo "BRICKS WERE SHAT.... AMRITE ?!?!?!?"
+		else
+			echo
+			echo "Not a brick was to be shat my kind sir"
+		fi
 echo
 echo -e " 	Go fap to this and learn some bash while you wait to recieve my D"
 echo
@@ -38,7 +44,7 @@ echo
 echo -e "	Just wait till you see MY Dick" > THE-D 
 echo
 
-$WAIT ;
+sleep 5 ;
 
 echo -e " P" $WAIT ; echo " U" $WAIT ; echo " T" $WAIT ;
 echo
@@ -49,4 +55,3 @@ echo
 echo -e " IT "
 echo
 echo -e "       CHECK THE-D in your current DIRECTORY... YOU CAN CALL THIS SURPRISE SEX"
-exit 0
