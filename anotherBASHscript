@@ -18,7 +18,7 @@ if [ $NUMBER -eq 3 ]
 				echo
 				echo " You chose 3 for some reason "
 				echo
-		elif [ $NUMBER -eq 9999 ]
+		elif [ $NUMBER -gt 9000 ]
 				then
 					echo
 					echo " I see what you did there... It's over nine thousand !"
