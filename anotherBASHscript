@@ -5,9 +5,9 @@
 ###################
 clear
 	echo
-	echo " I made this to haz pretty syntax "
-	echo
-	echo " Enter in a number "
+	echo -e " Your username is $USER and your System Time / Info is \n \n $(date) "  
+	echo						## The $USER is an environment variable that the system already recognizes : $(command) is a command you want to execute
+	echo -e " Enter in a number $USER "
 	echo
 read NUMBER
 		echo
