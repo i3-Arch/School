@@ -3,7 +3,7 @@
 ################
 HUE=$(uname -r)
 ipaddress=$(curl wtfismyip.com/text > ~/.IP.txt 2> ~/.hue.txt)
-Homo=$(cat ~/.IP.txt)
+homoo=$(cat ~/.IP.txt)
 removeTXT=$(rm ~/.IP.txt && rm ~/.hue.txt)
 clear
 	echo
@@ -82,15 +82,15 @@ fi
 			echo
 			echo " Also $ipaddress"
 			echo
-			echo " Your ip is $Homo ... Now time to H4x0r my first kangaroo "
+			echo " Your ip is $homoo ... Now time to H4x0r my first kangaroo "
 			echo "$removeTXT"
 		else 
 			echo
 			echo " Everything is as it should be .....  "
-if [ true = true ]     ## This will always be true
+if [ "$GENDER" == m -o "$GENDER" == M -o "$GENDER" == f -o "$GENDER" == F ]  
 	then
 		echo "$ipaddress"
-		echo " Your ip is $Homo  ... Now time to H4x0r You ! "
+		echo " Your ip is $homoo  ... Now time to H4x0r You ! "
 		echo "$removeTXT"
 	else
 		echo Something went wrong
