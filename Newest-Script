@@ -1,4 +1,6 @@
 #!/bin/bash
+## BY : i3-Arch
+################
 HUE=$(uname -r)
 ipaddress=$(curl wtfismyip.com/text > ~/.IP.txt 2> ~/.hue.txt)
 Homo=$(cat ~/.IP.txt)
@@ -75,8 +77,7 @@ if [ $GENDER == M -o $GENDER == m -o $GENDER == o -o $GENDER == O ]
 	fi
 fi
 	if [ $GENDER == o -o $GENDER == O ]
-		then
-			echo 
+		then 
 			echo " You must be a kangaroo "
 			echo
 			echo " Also $ipaddress"
