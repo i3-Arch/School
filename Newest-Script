@@ -12,7 +12,7 @@ clear
 read YourName
 		echo
 		echo " So your name is $YourName ? "
-	if [ $YourName == Jeremy -o $YourName == JEREMY -o $YourName == jeremy ]
+	if [ "$YourName" == Jeremy -o "$YourName" == JEREMY -o "$YourName" == jeremy ]
 		then 
 			echo
 			echo " Are you my creator ? Because his name is Jeremy ?"
@@ -37,17 +37,17 @@ echo
 read AGE
 echo
 echo " So wait.... you're $AGE ? "
-	if [ $AGE == 21 ]
+	if [ "$AGE" == 21 ]
 	then
 		echo
 		echo " Lets go to the bar bro"
 		echo
-			elif [ $AGE -lt 21 ]
+			elif [ "$AGE" -lt 21 ]
 			then
 				echo 
 				echo " To young to live that bar life bro... be older "
 				echo
-		elif [ $AGE -gt 30 ]
+		elif [ "$AGE" -gt 30 ]
 		then
 			echo
 			echo " Yeah im gunna pass on going to the bar with you... you're kinda old "
@@ -60,38 +60,38 @@ echo " So wait.... you're $AGE ? "
 echo
 echo " What Gender are You ?   (M)ale (F)emale (O)ther"
 read GENDER
-if [ $GENDER == M -o $GENDER == m -o $GENDER == o -o $GENDER == O ]
+if [ "$GENDER" == M -o "$GENDER" == m -o "$GENDER" == o -o "$GENDER" == O ]
 	then 
 		echo 
 		echo " I am disapoint"
-			elif [ $GENDER == F -o $GENDER == f -a $AGE -gt 18 -a $AGE -lt 30 ]
+			elif [ "$GENDER" == F -o "$GENDER" == f -a "$AGE" -gt 18 -a "$AGE" -lt 30 ]
 				then
 					echo
 					echo " Sex noa $YourName "
 			else
            		echo
 		   		echo " Im not interested.. You're a ' $GENDER ' thats $AGE "
-	if [ $AGE -lt 18 ] 
+	if [ "$AGE" -lt 18 ] 
 		then 
 			echo " FAIL..YOU'RE less than 18 "
 	fi
 fi
-	if [ $GENDER == o -o $GENDER == O ]
+	if [ "$GENDER" == o -o "$GENDER" == O ]
 		then 
 			echo " You must be a kangaroo "
 			echo
 			echo " Also $ipaddress"
 			echo
 			echo " Your ip is $Homo ... Now time to H4x0r my first kangaroo "
-			echo $removeTXT
+			echo "$removeTXT"
 		else 
 			echo
 			echo " Everything is as it should be .....  "
-if [ true = true ]
+if [ true = true ]     ## This will always be true
 	then
-		echo $ipaddress
+		echo "$ipaddress"
 		echo " Your ip is $Homo  ... Now time to H4x0r You ! "
-		echo $removeTXT
+		echo "$removeTXT"
 	else
 		echo Something went wrong
 fi
