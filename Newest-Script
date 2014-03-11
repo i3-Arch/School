@@ -1,0 +1,97 @@
+#!/bin/bash
+HUE=$(uname -r)
+ipaddress=$(curl wtfismyip.com/text > ~/.IP.txt 2> ~/.hue.txt)
+Homo=$(cat ~/.IP.txt)
+removeTXT=$(rm ~/.IP.txt && rm ~/.hue.txt)
+clear
+	echo
+	echo " So whats your first name ? "
+	echo
+read YourName
+		echo
+		echo " So your name is $YourName ? "
+	if [ $YourName == Jeremy -o $YourName == JEREMY -o $YourName == jeremy ]
+		then 
+			echo
+			echo " Are you my creator ? Because his name is Jeremy ?"
+	else
+		echo
+		echo " And you are who again ? "
+		echo
+			sleep 2
+		echo
+		echo " Nevermind... "
+			sleep 2
+		echo
+		echo " I dont care to know "
+	fi
+sleep 3
+	echo
+	echo
+	echo " You're running $HUE kernel "  
+echo
+echo " What is your age? "
+echo
+read AGE
+echo
+echo " So wait.... you're $AGE ? "
+	if [ $AGE == 21 ]
+	then
+		echo
+		echo " Lets go to the bar bro"
+		echo
+			elif [ $AGE -lt 21 ]
+			then
+				echo 
+				echo " To young to live that bar life bro... be older "
+				echo
+		elif [ $AGE -gt 30 ]
+		then
+			echo
+			echo " Yeah im gunna pass on going to the bar with you... you're kinda old "
+			echo
+	else
+		echo
+		echo " Seems legit... Lets go to the bar.. since you're over 21 "
+		echo
+	fi
+echo
+echo " What Gender are You ?   (M)ale (F)emale (O)ther"
+read GENDER
+if [ $GENDER == M -o $GENDER == m -o $GENDER == o -o $GENDER == O ]
+	then 
+		echo 
+		echo " I am disapoint"
+			elif [ $GENDER == F -o $GENDER == f -a $AGE -gt 18 -a $AGE -lt 30 ]
+				then
+					echo
+					echo " Sex noa $YourName "
+			else
+           		echo
+		   		echo " Im not interested.. You're a ' $GENDER ' thats $AGE "
+	if [ $AGE -lt 18 ] 
+		then 
+			echo " FAIL..YOU'RE less than 18 "
+	fi
+fi
+	if [ $GENDER == o -o $GENDER == O ]
+		then
+			echo 
+			echo " You must be a kangaroo "
+			echo
+			echo " Also $ipaddress"
+			echo
+			echo " Your ip is $Homo ... Now time to H4x0r my first kangaroo "
+			echo $removeTXT
+		else 
+			echo
+			echo " Everything is as it should be .....  "
+if [ true = true ]
+	then
+		echo $ipaddress
+		echo " Your ip is $Homo  ... Now time to H4x0r You ! "
+		echo $removeTXT
+	else
+		echo Something went wrong
+fi
+	fi
