@@ -40,7 +40,7 @@ read CHOICE
 		9) echo -e "${yellow} \033[1m $(bash ./test | tail -30) \033[0m " ;;
 		10) echo -e "${yellow} \033[1m $(bash ./test | head -11) \033[0m" ;;
 		11) echo -e "${yellow} \033[1m $(sed -n '22,47p' test) \033[0m " ;;
-		12) echo -e "${red}\033[1m This was created by Jeremy Marlow \033[0m " ;;
+		12) echo -e "${red}\033[1m This was created by Jeremy -- LAST NAME WITH-HELD \033[0m " ;;
 		13) echo -e "\033[1m ${yellow} I hope to see you soon ! \033[0m" ;;
 		 *) echo -e "\033[1m ${red} invalid option ${purple} try again\033[0m"
 	esac
