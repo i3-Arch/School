@@ -5,6 +5,7 @@ using namespace std;
 int main ()
 {
 	cout << "Sup." << endl;
+    cout << " First CPP script " << endl;
 
 		int n =  10;
 
