@@ -58,6 +58,7 @@ if [ $GENDER == M -o $GENDER == m -o $GENDER == o -o $GENDER == O ]
 then 
 	echo 
 	echo " I am disapoint"
+	echo " I cant have sex with guys.... Im not a homosexual "
 		elif [ $GENDER == F -o $GENDER == f -a $AGE -gt 18 -a $AGE -lt 30 ]  ; if [ $AGE -lt 18 ] ; then echo " FAIL..YOU'RE less than 18 " ; fi
 			then
 				echo
