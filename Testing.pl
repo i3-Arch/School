@@ -24,7 +24,7 @@ elsif ($QUESTION == 0) {
 		
 			print " What The Fuck \n  "; print " You could pick any number \n "; print " AND YOU FUCKING PICKED 0 \n ";}
 		
-unless ($QUESTION > 0) { 
+unless ($QUESTION >= -1) { 
 		
 			print " Nice Try Faggot \n "; print " Cant fool me bro \n "; }
 else { 
