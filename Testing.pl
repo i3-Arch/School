@@ -1,19 +1,20 @@
 #!/usr/bin/perl
 # i3-Arch
 ##################
-print " Your Architecture is ";
-$arch = system ("uname -m");
+$user = `echo $USER` ;
+print " Your Architecture is "; 
+$arch = `uname -m \n` ;
 print " $arch \n " ;  
 
 print " Your IP address is ";
-$ipaddress = system ("curl wtfismyip.com/text 2> /dev/null ");
+$ipaddress = system ("curl wtfismyip.com/text 2> /dev/null \n");
 
-print " Pick a Number  \n";
-print " ANY NUMBER  \n ";
+print " \n Pick a Number \n \n ";
+print " ANY NUMBER \n \n ";
 
 my $QUESTION = <STDIN>;
 
-print " So you picked $QUESTION \n ";
+print " \n So you picked $QUESTION \n ";
 
 if ($QUESTION >= 9001) { 
 	
@@ -28,4 +29,6 @@ unless ($QUESTION > 0) {
 			print " Nice Try Faggot \n "; print " Cant fool me bro \n "; }
 else { 
 	
-	print " Fuck You. Have A Nice Day ";}
+	print " Fuck You. Have A Nice Day \n ";}
+
+print "  Thanks for using this script $user  \n";
