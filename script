@@ -1,6 +1,5 @@
 #!/bin/bash
-# By: i3-Arch for NOS-120
-# Last Updated Feb. 23, 2014
+# i3-Arch
 red=$(tput setaf 1)
 white=$(tput setaf 7)
 green=$(tput setaf 2)
