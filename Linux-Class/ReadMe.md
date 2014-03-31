@@ -1,13 +1,3 @@
-##########################################################
-##   This Is A Bunch Of Scripts 						##
-##   I Made To Practice Some Programming Languages 	    ##
-##   The download instructions for the script 		    ##
-##   I made for my linux class are below 			    ## 
-##########################################################
-
-{ HOW TO DOWNLOAD AND RUN }
-
-
 (1A) Download 'lazy' script by running 
 			wget https://raw.githubusercontent.com/i3-Arch/School/master/Linux-Class/lazy
  	
