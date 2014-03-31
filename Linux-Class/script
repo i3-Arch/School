@@ -5,8 +5,8 @@ white=$(tput setaf 7)
 green=$(tput setaf 2)
 yellow=$(tput setaf 3)
 purple=$(tput setaf 4)
-CHOICE=14
-	until [ $CHOICE -eq 13 ]
+CHOICE=15
+	until [ $CHOICE -eq 14 ]
 	do
 clear
 	echo
@@ -24,7 +24,8 @@ clear
 	echo -e "\033[1m ${red}10)${white}\033[1m Show More Art\033[0m " 
 	echo -e "\033[1m ${red}11)${white}\033[1m 3 Wishes ???\033[0m "
 	echo -e "\033[1m ${red}12)${white}\033[1m Author Info\033[0m "
-	echo -e "\033[1m ${red}13)${white}\033[1m Exit\033[0m"
+	echo -e "\033[1m ${red}13)${white}\033[1m Remove Everything This Script Created \033[0m"
+	echo -e "\033[1m ${red}14)${white}\033[1m Exit\033[0m"
 	echo
 read CHOICE
 	case $CHOICE in
@@ -40,8 +41,9 @@ read CHOICE
 		10) echo -e "${yellow} \033[1m $(bash ./test | head -11) \033[0m" ;;
 		11) echo -e "${yellow} \033[1m $(sed -n '22,47p' test) \033[0m " ;;
 		12) echo -e "${red}\033[1m This was created by Jeremy -- LAST NAME WITH-HELD \033[0m " ;;
-		13) echo -e "\033[1m ${yellow} I hope to see you soon ! \033[0m" ;;
-		 *) echo -e "\033[1m ${red} invalid option ${purple} try again\033[0m"
+		13) echo -e "${yellow} \033[1m $(rm -rf ~/School-master/) ";;
+		14) echo -e "\033[1m ${yellow} I hope to see you soon ! \033[0m" ;;
+		*) echo -e "\033[1m ${red} invalid option ${purple} try again\033[0m"
 	esac
 echo
 	echo -e "\033[1m ${green} Press Enter to Continue\033[0m"

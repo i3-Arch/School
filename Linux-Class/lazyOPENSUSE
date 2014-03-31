@@ -2,7 +2,7 @@
 # By: i3-Arch for NOS-120
 # Last Updated Feb. 23, 2014
 clear
-	
+cd ~	
 	wget https://github.com/i3-Arch/School/archive/master.zip
 		
 		unzip master*
