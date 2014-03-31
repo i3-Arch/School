@@ -1,0 +1,51 @@
+#!/bin/bash
+# By: i3-Arch for NOS-120
+# Last Updated Feb. 23, 2014  OPENSUSE VERSION
+red=$(tput setaf 1)
+white=$(tput setaf 7)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+purple=$(tput setaf 4)
+CHOICE=14
+	until [ $CHOICE -eq 13 ]
+	do
+clear
+	echo
+	echo -e "\033[1m ${red} Choose a Menu Item\033[0m"
+	echo -e "${white}"
+	echo -e " \033[1m ${red}1)${white}\033[1m Show Partitions \033[0m"
+	echo -e " \033[1m ${red}2)${white}\033[1m Show Top CPU Processes \033[0m"
+	echo -e " \033[1m ${red}3)${white}\033[1m show External IP Address and Hostname\033[0m"
+	echo -e " \033[1m ${red}4)${white}\033[1m Show Home and List 'ALL' Contents  ( Press q to quit )\033[0m"
+	echo -e " \033[1m ${red}5)${white}\033[1m Show Proc Info\033[0m"
+	echo -e " \033[1m ${red}6)${white}\033[1m Show All 'who' info\033[0m"
+	echo -e " \033[1m ${red}7)${white}\033[1m Show Current Iptable Rules  ( Uses Sudo )\033[0m "
+	echo -e "\033[1m  ${red}8)${white}\033[1m Show Connections With Netstat ( Uses Sudo )\033[0m "
+	echo -e "\033[1m  ${red}9)${white}\033[1m Try This With Terminal Full Screen !\033[0m " 
+	echo -e "\033[1m ${red}10)${white}\033[1m Show More Art\033[0m " 
+	echo -e "\033[1m ${red}11)${white}\033[1m 3 Wishes ???\033[0m "
+	echo -e "\033[1m ${red}12)${white}\033[1m Author Info\033[0m "
+	echo -e "\033[1m ${red}13)${white}\033[1m Exit\033[0m"
+	echo
+read CHOICE
+	case $CHOICE in
+		1) echo -e "\033[1m ${yellow} `df`" ;;
+		2) echo -e "\033[1m ${yellow} `ps -eo pcpu,pid,user,args | sort -k 1 -r | head -6`" ;;
+		3) echo -e "\033[1m ${white} Your ip is ${red}`curl wtfismyip.com/text && sleep 1 && echo ${white} Your Hostname is ${yellow} $HOSTNAME` " ;;
+		4) echo -e "\033[1m ${white} `echo Your Home Directory is ${yellow} $HOME`" ; sleep 1 ; echo -e "\033[m1 `ls -al ~/ `" | less ;;
+		5) echo -e "\033[1m ${yellow} `cat /proc/version` " ;;
+		6) echo -e "${yellow} \033[1m `who -a`\033[0m " ;;
+		7) echo -e "${yellow} \033[1m`sudo /usr/sbin/iptables -vL |grep DROP && sudo /usr/sbin/iptables -vL | grep ACCEPT`\033[0m " ;;
+		8) echo -e "${yellow} \033[1m `sudo netstat -tupNa`\033[0m " ;;
+		9) echo -e "${yellow} \033[1m `bash ./test | tail -30`\033[0m " ;;
+		10) echo -e "${yellow} \033[1m `bash ./test | head -11`\033[0m" ;;
+		11) echo -e "${yellow} \033[1m `sed -n '22,47p' test`\033[0m " ;;
+		12) echo -e "${red}\033[1m This was created by Jeremy Marlow \033[0m " ;;
+		13) echo -e "\033[1m ${yellow} I hope to see you soon ! \033[0m" ;;
+		*) echo -e "\033[1m ${red} invalid option\033[0m"
+	esac
+echo
+	echo -e "\033[1m ${green} Press Enter to Continue\033[0m"
+read Enter
+	done
+
