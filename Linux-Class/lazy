@@ -1,10 +1,9 @@
 #!/bin/bash
-# By: i3-Arch for NOS-120
-# Last Updated Feb. 23, 2014
+# By: i3-Arch
 clear
-wget https://github.com/i3-Arch/School/archive/master.zip && sleep 2
+wget https://github.com/i3-Arch/School/archive/master.zip
 unzip master*
 rm master*
-cd School-master
+cd School-master/Linux-Class
 sudo chmod 741 script
 ./script
