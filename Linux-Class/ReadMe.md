@@ -4,8 +4,10 @@
 		(1B) If running OpenSuse download like so
 				wget https://raw.githubusercontent.com/i3-Arch/School/master/Linux-Class/lazyOPENSUSE 
 
+			:: This depends on which lazy script you ran ::
+			:: (OpenSuse version or Regular 'lazy' script) ::
 
-	(2) Then run          source lazyOPENSUSE         or       source lazy        ( depending on what your running obviously ) 
+	(2) Then run          source lazyOPENSUSE         or       source lazy
 
 	The 'lazy' script will download the script and file it needs
 		then unzip files, then rm the .zip
