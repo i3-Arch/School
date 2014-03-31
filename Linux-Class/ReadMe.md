@@ -5,30 +5,13 @@
 				wget https://raw.githubusercontent.com/i3-Arch/School/master/Linux-Class/lazyOPENSUSE 
 
 
-(2) Then run          source lazyOPENSUSE         or       source lazy        ( depending on what your running ofc ) 
+(2) Then run          source lazyOPENSUSE         or       source lazy        ( depending on what your running obviously ) 
 
+The 'lazy' script will download the script and file it needs
+		then unzip files, then rm the .zip
+		 then cd and chmod 741 the script
+	  		    then it runs it..
 
-The 'lazy' script will download
-
-	the script and file it needs
-
-		the script will use wget
-		
-				then unzip files
-				
-				then rm .zip
-
-		then cd and chmod 741 
-the script and ... then it runs it
-			
-
-
--------- = = = =  CHECK OUT MY i3 config for Archlinux = = = = ---------
-	 __________________________________________
-       	         __          __                    
-	    ,  /    )        / |                /
-	         _ /        /__|   )__    __   /__
-	  /        )  ===  /   |  /   ) /   ' /   )
-	_/___(____/_______/____|_/_____(___ _/___/_
-                                                                                      
--------- = = = =  CHECK OUT MY i3 config for Archlinux = = = = ---------
+				The actual script I made for class is called 
+								script
+						Its just a simple menu script
