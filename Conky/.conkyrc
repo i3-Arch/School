@@ -99,6 +99,7 @@ TEXT
 #${voffset 2}${alignc}${time %A, %d %B %Y}
 ${voffset 31}${color #08C}SYSTEM ${color}${hr 2}
 ${alignc 24}${font Arial Black:size=14}${nodename}${font}
+# ${offset 60} ${color white}Users: ${color #dd0000}${user_number}${color white}
 #${alignc 4}Sony Vaio
 ${voffset 2}${font Arial Black:style=Bold:size=12}#!${font} CrunchBang Linux ${alignr}08.10.01
 ${font OpenLogos:size=20}B${color #08C}${color}${font} Kernel: ${alignr}${kernel}
@@ -152,15 +153,19 @@ ${else}
 ${voffset -6}${font PizzaDude Bullets:size=14}E${font} wlp2s0 disabled
 ${endif}
 # ${voffset -6}${font PizzaDude Bullets:size=14}?${font} wifi quality: ${wireless_link_qual_perc wlp2s0}%${alignr}${wireless_link_qual wlp2s0} / ${wireless_link_qual_max wlp2s0}
-${voffset -6}${font PizzaDude Bullets:size=14}2${font} IP local: ${alignr} ${addr wlp2s0}
-#${voffset 4}${font PizzaDude Bullets:size=14}4${font} IP public: ${alignr} ${execi 600 curl ifconfig.me}
+# ${voffset -6}${font PizzaDude Bullets:size=14}2${font} IP local: ${alignr} ${addr wlp2s0}
+# ${voffset 4}${font PizzaDude Bullets:size=14}4${font} IP public: ${alignr} ${execi 600 curl ifconfig.me}
 ${voffset 4}${font PizzaDude Bullets:size=14}?${font} wifi quality: ${wireless_link_qual_perc wlp2s0}%${alignr}${wireless_link_qual wlp2s0} / ${wireless_link_qual_max wlp2s0}
 ## ${voffset -10}${color #08C}SPOTIFY ${color}${hr 2}
 # ${voffset 4}${execpi 5 /home/thorn/Dropbox/Coding/Conky/spotify.rb 1 ${voffset -10}
 # ${color #08C}CALENDAR ${color}${hr 2}
 # ${voffset 4}${font DejaVuSansMono:size=9}${execpi 60 DJS=`date +%_d`; cal -m | sed s/"\(^\|[^0-9]\)$DJS"'\b'/'\1${color #08C}'"$DJS"'$color'/}
-
-${voffset -10}${color #08C}CONNECTIONS ${color}${hr 2}
+# ${voffset 2}${color #08C}MPD: ${color} ${color white}${alignc}$mpd_artist - ${color white}$mpd_title
+# ${color white}${stippled_hr space}${color white}
+# ${color #08C}$mpd_bar
+# ${color white}${alignc}$mpd_status
+# ${color #08C}${stippled_hr space}${color white}
+${voffset 10}${color #08C}CONNECTIONS ${color}${hr 2}
 #${if_existing /dev/sdb1}${exec df -h | grep "sdb1" | cut -c -38} $else $endif  ## for usb details \\ MISC
 ${execi 30 netstat -ept | grep ESTAB | awk '{print $9}' | cut -d: -f1 | sort | uniq -c | sort -nr}
 #${execi 30 netstat -Natup | grep LISTEN | awk '{print $9}' | cut -d: -f1 | sort | uniq -c | sort -nr}
