@@ -7,7 +7,7 @@ use Term::ANSIColor;
 print `clear`;
 print color("red"), "This was created by i3-Arch ! \n", color("reset");
 print color("green"), " Just A Simple Perl Script \n", color("reset");
-print " Your Architecture is ";
+print " \n\nYour Architecture is ";
 my ($arch) = `uname -m \n` ;
 print (" $arch \n ") ;  
 
@@ -39,9 +39,10 @@ else {
 	
 print color("green"), " \n Fuck You. Have A Nice Day \n ", color("reset");}
 
-print color("blue"), "  \n Thanks for using this script  \n", color("reset");
+print color("blue"), "  \n #SWAG  #YOLO  #IDGAF  \n", color("reset");
 
 print color("red"), " \n Here is the output of netstat -tupNa  \n ", color("reset");
 print color("green");
 my ($HUE) = system ("\n netstat -tupNa > tst023 ; cat tst023 ; rm tst023 2> /dev/null \n") ;
 print color("reset");
+die "\n\n Thanks for using this script ! \n\n";
