@@ -2,11 +2,11 @@
  
 int main()
  {
-	int x;
+	int cool;
     
 	printf( "Enter a number: " );
-	scanf( "%d", &x );
-	printf( "You entered %d", x );
+	scanf( "%d", &cool );
+	printf( "You entered %d \n", cool );
 	getchar();
 	return 0;
 }
