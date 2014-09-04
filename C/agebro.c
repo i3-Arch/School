@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <curses.h>
 
 int main()   
 {
@@ -14,7 +13,6 @@ int main()
 	printf("\x1b[35mThis is purple text\x1b[0m\n");
 	printf("\x1b[36mThis is orange text\x1b[0m\n");
 	printf("\x1b[37mThis is white text\x1b[0m\n");
-	printf("\x1b[38mThis is grey text\x1b[0m\n"); 
 	*/
 	
 	printf( "\x1b[37m\n\nPlease enter your current age: \x1b[0m" );
@@ -35,7 +33,7 @@ int main()
 	printf( "\x1b[33m\nDamn, Your gettin old \n\x1b[0m" );
 	}
 	else if ( YourAge == 0 ) {
-	printf( "\x1b[31m\nYou must be trolling, \x1b[37mC \x1b[32mis srs bidness\n\x1b[0m");
+	printf( "\x1b[33m\nYou must be trolling, \x1b[37mC \x1b[32mis srs bidness\n\x1b[0m");
 	}
 	else {
 	printf( "\x1b[36\nEhh, I guess you're my elder? Since you're so old...\n\x1b[0m" );
@@ -49,7 +47,7 @@ int subfunc()
 {
 	char ColorBro[10];
 
-	printf( "\x1b[37m\n\n Please Enter Your Favorite Color: \x1b[0m" );
+	printf( "\x1b[37m\n\nPlease Enter Your Favorite Color: \x1b[0m" );
 	scanf( "%s", &ColorBro );
 	printf( "\x1b[34m\n\nYour Favorite Color is: \x1b[0m" );
 	printf( "\x1b[37m%s\n\n\x1b[0m", ColorBro );
