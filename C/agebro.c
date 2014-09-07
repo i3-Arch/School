@@ -105,7 +105,7 @@ int subfunc()
 	return 0;
 }
 
-int main()
+int main(void)
 {
 	submain();	
 	full();
