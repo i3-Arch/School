@@ -94,7 +94,9 @@ int subfunc()
 	else if ( strcmp ( SystemBro, "ARCHLINUX" ) ==0 ) {
 		printf( "\x1b[37m Congrats on being Master Race\n\n\x1b[0m" );
 	}
-	
+	else if ( strcmp ( SystemBro, "arch" ) ==0 ) {
+		printf( "\x1b[37m Congrates on being Master Race\n\n\x1b[0m" );
+	}
 	else if ( strcmp ( SystemBro, "ubuntu" ) == 0 ) {
 		printf( "\x1b[31m Wow, you're a newb\n\n\x1b[0m" );
 	}
