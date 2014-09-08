@@ -110,8 +110,14 @@ int subfunc()
 	else if ( strcmp ( SystemBro, "mint" ) == 0 ) {
 		printf( "\x1b[31m Wow, you're a newb\n\n\x1b[0m" );
 	}
+	else if ( strcmp ( SystemBro, "fedora" ) == 0 ) {
+		printf( "Not bad... But it's not Archlinux...." );
+	}
+	else if ( strcmp ( SystemBro, "debian" ) == 0 ) {
+		printf( "\x1b[37m\n\nNot bad... But it's not Archlinux...\n\n\x1b[0m" );
+	}
 	else {
-		printf( "\x1b[31m\n\n Well, it's not archlinux... So you're not Master Race\n\n\x1b[0m" );
+		printf( "\x1b[31m\n\n Well, it's not Archlinux... So you're not Master Race\n\n\x1b[0m" );
 	}
 	
 	return 0;
