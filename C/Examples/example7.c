@@ -1,6 +1,11 @@
 #include <stdio.h>
 #define MAX 10
 
+/*
+ *	------> This is an example for future reference <------
+ *	
+ */
+
 int main(void)
 {
 	int data[MAX];
