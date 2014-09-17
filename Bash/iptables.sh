@@ -67,11 +67,9 @@ IFSSH() {
 	
 MAIN() {
 	
-	printf "\n\nCheck that the rules load correctly using: systemctl start iptables.service && systemctl status iptables.service\n\n"
-	
 	DAT_TABLE		
 	IFSSH
-
+	printf "\n\nCheck that the rules load correctly using: 'systemctl start iptables.service && systemctl status iptables.service' \n\n"
 	printf "\n\n	--<{COMPLETE}>--		\n\n"
 }
 
