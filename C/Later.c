@@ -1,7 +1,10 @@
 #include <stdio.h>
-/* This is not my code. 
- *  * Although I do plan to fork it later. 
- *   */
+/* 
+ *  This is not my code. 
+ *  Using as reference
+ *   
+ */
+ 
 main()
 {
    int n, c;
