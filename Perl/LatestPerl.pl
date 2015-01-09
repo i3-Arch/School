@@ -1,8 +1,8 @@
 #!/usr/bin/perl
 ###########################################
-##			|						     ##
+##			|    	         ##
 ## i3-Arch  |  Just A Simple PERL Script ##
-##			|		  #Newb2Perl		 ##
+##		 #Newb2Perl		 ##
 ###########################################
 
 #use warnings;
