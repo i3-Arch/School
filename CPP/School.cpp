@@ -1,6 +1,5 @@
 // Created by i3-Arch on 1-11-2015
 #include <iostream>
-using namespace std;
 
 int main()
 {	
@@ -15,12 +14,12 @@ int main()
 
 	// Enter input items
 
-	cout << "Enter the total of the bill: "; 	
-	cin >> TotalBill;
-	cout << "Enter the your liqour charge: ";
-	cin >> Liqour;
-	cout << "Enter the tip percentage in decimal format: ";
-	cin >> TipPercent;
+	std::cout << "Enter the total of the bill: "; 	
+	std::cin >> TotalBill;
+	std::cout << "Enter the your liqour charge: ";
+	std::cin >> Liqour;
+	std::cout << "Enter the tip percentage in decimal format: ";
+	std::cin >> TipPercent;
 
 	// Calculate the total without liqour and the tip
 
@@ -29,9 +28,8 @@ int main()
 
 	// Display the output item
 
-	cout << "Tip: $" << Tip << endl;	
+	std::cout << "Tip: $" << Tip << std::endl;	
 	
 	return 0;
 }
-
 //EOF
