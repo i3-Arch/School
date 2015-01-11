@@ -5,26 +5,33 @@ using namespace std;
 int main()
 {	
 	
-	double TotalBill = 		0.0;		// Declare Variables
+	// Declare Variables
+	
+	double TotalBill = 		0.0;		
 	double Liqour = 		0.0;
 	double TipPercent = 	0.0;
 	double TotalNoLiqour =	0.0;
 	double Tip =			0.0;
 
-	cout << "Enter the total of the bill: "; 	// Enter input items
+	// Enter input items
+
+	cout << "Enter the total of the bill: "; 	
 	cin >> TotalBill;
 	cout << "Enter the your liqour charge: ";
 	cin >> Liqour;
 	cout << "Enter the tip percentage in decimal format: ";
 	cin >> TipPercent;
 
-	TotalNoLiqour = TotalBill - Liqour;		// Calculate the total without liqour and the tip
+	// Calculate the total without liqour and the tip
+
+	TotalNoLiqour = TotalBill - Liqour;	
 	Tip = TotalNoLiqour * TipPercent;
 
-	cout << "Tip: $" << Tip << endl;		// Display the output item
+	// Display the output item
 
+	cout << "Tip: $" << Tip << endl;	
+	
 	return 0;
 }
-
 
 //EOF
