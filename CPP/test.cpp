@@ -5,7 +5,7 @@
  int main ()
  {
 	
-   double DatChoice1 = 0;
+   int DatChoice1 = 0;
    std::string mystring;
    mystring = "Hey, How are you doing today?";
    std::cout << mystring << std::endl;
