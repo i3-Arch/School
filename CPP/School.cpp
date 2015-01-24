@@ -8,8 +8,8 @@ int main()
 	
 	double TotalBill = 		0.0;		
 	double Liqour = 		0.0;
-	double TipPercent = 	0.0;
-	double TotalNoLiqour =	0.0;
+	double TipPercent = 		0.0;
+	double TotalNoLiqour =		0.0;
 	double Tip =			0.0;
 
 	// Enter input items
