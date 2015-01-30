@@ -1,5 +1,6 @@
 // i3-Arch
 #include <iostream>
+#include <stdio.h>
 
 int main() {
 
