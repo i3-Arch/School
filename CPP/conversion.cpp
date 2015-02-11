@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 
 int main() {
 
@@ -11,7 +10,7 @@ int main() {
 	double amtJapanese		= 0.0;
 	double americanDollars		= 0.0;
 
-	printf("Enter Amount of American Dollars to convert: ");
+	std::cout << "Enter Amount of American Dollars to convert: ";
 	std::cin >> americanDollars;
 
 	amtBritish	= americanDollars * BRITISH_POUNDS;
