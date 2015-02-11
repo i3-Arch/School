@@ -10,7 +10,7 @@ int main() {
 	double studentGovAmt	= 0.0;  // Student government amount/total
 	double computerClubAmt	= 0.0;  // Computer Club amount/total
 
-	// Not sure wether i should \n or endl below ( whats better )
+	// Not sure whether i should \n or endl below ( whats better )
 	cout << "########################################\n";
 	cout << "##                                    ##\n";
 	cout << "##        Candy Bar Fundraiser        ##\n";
