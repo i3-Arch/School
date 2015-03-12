@@ -9,7 +9,7 @@ int main() {
 	int    myCount          = 1;
 	double myTotalCharge    = 0;
 	double chargeCompany    = 0;
-	double avgPerPerson		= 0.0;
+	double avgPerPerson	= 0.0;
 	char   myChoice         = ' ';
 
 	while(toupper(myChoice) != 'Q')
