@@ -1,3 +1,5 @@
+// i3-Arch
+// To run on linux  ==> change system("cls") to system("clear") 
 #include <iostream>
 #include <iomanip>
 using namespace std;
