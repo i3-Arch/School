@@ -47,7 +47,7 @@ int main() {
 		myCount += 1;
 	}
 
-	avgPerPerson = myTotalCharge / totalRegistrants;
+	avgPerPerson = static_cast<double>(myTotalCharge / totalRegistrants);
 
 	cout << fixed << setprecision(2);
 	cout << "\n\n Total Registrants: " << totalRegistrants << endl;
