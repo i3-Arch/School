@@ -7,7 +7,7 @@ int main() {
 	int    myRegistrants	= 0;
 	int    totalRegistrants = 0;
 	int    myCount          = 1;
-	int myTotalCharge	= 0;
+	int    myTotalCharge	= 0;
 	double chargeCompany    = 0.0;
 	double avgPerPerson	= 0.0;
 
