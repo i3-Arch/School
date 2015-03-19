@@ -34,7 +34,7 @@ int main() {
 	}
 	else
 	{
-		std::cout << "\n\n Also cocks" << std::endl;
+		std::cout << "\n\n Also this" << std::endl;
 	}
 
 	return 0;
