@@ -13,9 +13,9 @@ int main() {
 
 	if(myIntA > 0)
 	{
-		for(int myIntB = myIntA; myIntB < 9007; myIntB += 6)
+		for(int myIntB = myIntA; myIntB < 9002; myIntB += 1)
 		{
-			cout << "Incrimenting by 5 till 9006 Bro ==>  " << myIntB << endl;
+			cout << "Incrimenting by 1 till over 9000 Bro ==>  " << myIntB << endl;
 	
 		}
 	
