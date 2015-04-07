@@ -51,12 +51,12 @@ int main() {
 			if(winOnix == 1)
 			{
 				system("cls");
-				cout << "\n [Author] ===> SwagGodLegend <===" << endl;
+				cout << "\n [Author] ===> i3-Arch <===" << endl;
 			}
 			else
 			{
 				system("clear");
-				cout << "\n [Author] ===> SwagGodLegend <===" << endl;
+				cout << "\n [Author] ===> i3-Arch <===" << endl;
 			}
 
 		}
