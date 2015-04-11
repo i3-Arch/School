@@ -43,6 +43,11 @@ int main() {
 	              	cout  << "\n\n  [Y/N] \n\n" << endl;
         	      	cout << "\n Choice: ";
 			cin >> yesNo;
+			if(yesNo == 'Y' || yesNo == 'y')
+			{
+				cout << "\n Swag, You Know The Trufax.... \n\n" << endl;
+	                	cout << "\n We should chill bro \n " << endl;
+			}
 		}
 
 	
