@@ -34,9 +34,8 @@ int main()
 		
 		cout << "\n ** Enter -1 To Quit ** \n\n" << endl;
 		cout << "\n Enter Hours Worked For Employee #" << myCount << endl;
-	    cout << "\n\n Hours: ";
+		cout << "\n\n Hours: ";
 		cin >> myHours;
-
 	}
 
 	if(myHours == -1)
@@ -72,7 +71,7 @@ double getGrossPay(double myTotalGross)
 {
 	cout << fixed << setprecision(2);
 	cout << "\n\n Total Gross Pay For ALL Employee's is \n\n"
-		 << " Total: $" << myTotalGross << endl << endl;
+	     << " Total: $" << myTotalGross << endl << endl;
 
 	return myTotalGross;
 }
