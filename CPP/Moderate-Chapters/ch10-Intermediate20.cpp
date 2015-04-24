@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 
-/* Prototypes */
+
 void getEmpGross(int myHours, double myRate, double &myGross);
 double getGrossPay(double myTotalGross);
 
@@ -35,7 +35,7 @@ int main()
 		
 		cout << "\n ** Enter a Negative Number To Quit ** \n\n" << endl;
 		cout << "\n Enter Hours Worked For Employee #" << myCount << endl;
-	    cout << "\n\n Hours: ";
+	    	cout << "\n\n Hours: ";
 		cin >> myHours;
 
 	}
@@ -70,7 +70,7 @@ double getGrossPay(double myTotalGross)
 {
 	cout << fixed << setprecision(2);
 	cout << "\n\n Total Gross Pay For ALL Employee's is \n\n"
-		 << " Total: $" << myTotalGross << endl << endl;
+             << " Total: $" << myTotalGross << endl << endl;
 
 	return myTotalGross;
 }
