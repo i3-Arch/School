@@ -1,4 +1,3 @@
-// Not sure if this is what you wanted?!?!?!
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -9,7 +8,7 @@ double getGrossPay(double, double);
 int main()
 {
 
-	int myCount			= 1;
+	int myCount		= 1;
 	double perEmployee	= 0.0;
 	double hoursWorked	= 0.0;
 	double payRate		= 0.0;
@@ -55,7 +54,7 @@ double getGrossPay(double hoursWorked, double payRate)
 {
 	double grossPay = 0.0;
 
-	if (hoursWorked > 40)
+	if(hoursWorked > 40)
 	{
 		double extraHours = 40 - hoursWorked;
 		double extraPayRate = 1.5 * payRate;

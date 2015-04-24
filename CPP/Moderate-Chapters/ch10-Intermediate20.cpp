@@ -18,13 +18,12 @@ int main()
 	double myTotalGross = 0.0;
 
 
-	cout << "\n ** Enter a Negative Number To Quit ** \n\n" << endl;
+	cout << "\n ** Enter -1 To Quit ** \n\n" << endl;
 	cout << "\n Enter Hours Worked For Employee #" << myCount << endl;
 	cout << "\n\n Hours: ";
 	cin >> myHours;
 
-
-	while(myHours > 0)
+	while(myHours != -1 && myHours > 0)
 	{
 		cout << "\n Enter Pay Rate: $";
 		cin >> myRate;
@@ -33,14 +32,17 @@ int main()
 		myTotalGross += myGross;
 		myCount += 1;
 		
-		cout << "\n ** Enter a Negative Number To Quit ** \n\n" << endl;
+		cout << "\n ** Enter -1 To Quit ** \n\n" << endl;
 		cout << "\n Enter Hours Worked For Employee #" << myCount << endl;
-	    	cout << "\n\n Hours: ";
+	    cout << "\n\n Hours: ";
 		cin >> myHours;
 
 	}
 
-	getGrossPay(myTotalGross);
+	if(myHours == -1)
+		getGrossPay(myTotalGross);
+	else
+		cout << "\n\n Exiting... Invalid Data.. \n\n" << endl;
 
 	return 0;
 }
@@ -70,7 +72,7 @@ double getGrossPay(double myTotalGross)
 {
 	cout << fixed << setprecision(2);
 	cout << "\n\n Total Gross Pay For ALL Employee's is \n\n"
-             << " Total: $" << myTotalGross << endl << endl;
+		 << " Total: $" << myTotalGross << endl << endl;
 
 	return myTotalGross;
 }
