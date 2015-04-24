@@ -12,7 +12,7 @@ void displayInfo(double &calcNet, double &calcFWT, double &calcFICA);
 int main()
 {
 	const double myFWT  = 0.2;
-    const double myFICA = .08;
+    	const double myFICA = .08;
 	double mySal        = 0.0;
 	double calcFWT      = 0.0;
 	double calcFICA     = 0.0;
@@ -29,9 +29,9 @@ int main()
 		calcNetPay(mySal, calcNet, calcFWT, calcFICA);		
 		displayInfo(calcNet, calcFWT, calcFICA);
 		
-	    cout << "\n\n ** =[ ENTER A NEGATIVE NUMBER TO QUIT ]= ** \n\n"
-	     << "\n\n\n Enter The Salary: $";
-		cin >> mySal;
+		cout << "\n\n ** =[ ENTER A NEGATIVE NUMBER TO QUIT ]= ** \n\n"
+	             << "\n\n\n Enter The Salary: $";
+	    	cin >> mySal;
 	}
 
 	return 0;
