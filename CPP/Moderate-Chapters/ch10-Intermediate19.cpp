@@ -4,8 +4,8 @@ using namespace std;
 
 
 void calcFedTaxes(double &mySal, const double myFWT, double &calcFWT, const double myFICA, double &calcFICA);
-void calcNetPay(double mySal, double &calcNet, double &calcFWT, double &calcFICA);
-void displayInfo(double &calcNet, double &calcFWT, double &calcFICA);
+void calcNetPay(double mySal, double &calcNet, double calcFWT, double calcFICA);
+void displayInfo(double calcNet, double calcFWT, double calcFICA);
 
 
 
@@ -44,12 +44,12 @@ void calcFedTaxes(double &mySal, double myFWT, double &calcFWT, double myFICA, d
 	calcFICA = mySal * myFICA;
 }
 
-void calcNetPay(double mySal, double &calcNet, double &calcFWT, double &calcFICA)
+void calcNetPay(double mySal, double &calcNet, double calcFWT, double calcFICA)
 {
 	calcNet = mySal - (calcFICA + calcFWT);
 }
 
-void displayInfo(double &calcNet, double &calcFWT, double &calcFICA)
+void displayInfo(double calcNet, double calcFWT, double calcFICA)
 {
 	cout << fixed << setprecision(2);
 	cout << "\n Total Net Pay: $" << calcNet << endl;
