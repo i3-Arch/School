@@ -3,13 +3,9 @@
 # Last Updated Feb. 23, 2014
 clear
 cd ~	
-	wget https://github.com/i3-Arch/School/archive/master.zip
-		
-		unzip master*
-			
-			rm master*
-
-				cd School-master/Linux-Class
-					
-					sudo chmod 741 OPENSUSE-version
+wget https://github.com/i3-Arch/School/archive/master.zip
+unzip master*
+rm master*
+cd School-master/Linux-Class	
+sudo chmod 741 OPENSUSE-version
 ./OPENSUSE-version
