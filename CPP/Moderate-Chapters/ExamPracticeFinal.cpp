@@ -8,7 +8,7 @@ using std::setprecision;
 
 /* PROTOTYPES */
 void myGreet();
-void getTotal(int hoursWkd, double hourlyPay, double &myTotal);
+void getTotal(int, double, double&);
 void myDisplay(double);
 double getHourlyPay();
 int getHoursWkd();
