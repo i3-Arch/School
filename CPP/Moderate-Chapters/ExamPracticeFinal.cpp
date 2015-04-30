@@ -1,3 +1,4 @@
+/*   -={ Author: i3-Arch ]=-  */
 #include <iostream>
 #include <iomanip>
 using std::cin; 
@@ -31,11 +32,11 @@ int main()
 void myGreet()
 {
 	cout << "\n\n\n\n\n\n\n\n\n\n"
-		 << "        ################################ \n"
-		 << "        ##                            ## \n"
-		 << "        ##      Salary Calculator     ## \n"
-		 << "        ##                            ## \n"
-		 << "        ################################ \n" << endl;
+	     << "        ################################ \n"
+	     << "        ##                            ## \n"
+	     << "        ##      Salary Calculator     ## \n"
+	     << "        ##                            ## \n"
+	     << "        ################################ \n" << endl;
 }
 
 double getHourlyPay()
@@ -45,7 +46,7 @@ double getHourlyPay()
 	do
 	{
 		cout << "\n\n Enter Your Hourly Pay \n\n"
-			 << "\n Hourly Pay: $";
+		     << "\n Hourly Pay: $";
 		cin >> hourlyPay;
 
 		if(hourlyPay > 0)
