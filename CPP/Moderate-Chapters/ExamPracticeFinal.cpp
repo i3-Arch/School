@@ -84,9 +84,9 @@ void getTotal(int hoursWkd, double hourlyPay, double &myTotal)
 	if(hoursWkd > 40)
 	{
 		int overTimeHrs = hoursWkd - 40;
-		int regHoursTot = hourlyPay * 40;
+		double regHoursTot = hourlyPay * 40;
 
-		myTotal = overTimeHrs * (hourlyPay * 1.5) + regHoursTot;
+		myTotal = static_cast<double>(overTimeHrs) * (hourlyPay * 1.5) + regHoursTot;
 	}
 	else
 		myTotal = static_cast<double>(hoursWkd) * hourlyPay;
