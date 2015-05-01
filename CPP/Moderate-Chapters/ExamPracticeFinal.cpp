@@ -1,4 +1,4 @@
-/*   -={ Author: i3-Arch ]=-  */
+/* i3-Arch */
 #include <iostream>
 #include <iomanip>
 using std::cin; 
@@ -54,6 +54,9 @@ double getHourlyPay()
 		else
 			cout << "\n\n Sorry... Hourly Pay Can't Be Less Than or Equal to $0 \n" << endl;
 
+		cin.clear();
+		cin.get();
+
 	}while(hourlyPay <= 0);
 
 	return hourlyPay;
@@ -73,6 +76,9 @@ int getHoursWkd()
 			cout << "\n\n Thank You \n" << endl;
 		else
 			cout << "\n\n Sorry... Hours cant be less than or Equal to 0 \n" << endl;
+
+		cin.clear();
+		cin.get();
 
 	}while(hoursWkd <= 0);
 
