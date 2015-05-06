@@ -9,7 +9,6 @@ void displayInfo(char, double);
 
 int main()
 {
-	
 	double labAvg  = 0.0;
 	double quizAvg = 0.0;
 	double examAvg = 0.0;
@@ -29,7 +28,6 @@ int main()
 
 void getInput(double &labAvg, double &quizAvg, double &examAvg)
 {
-
 	cout << "\n Enter your Lab Avg: ";
 	cin >> labAvg;
 
@@ -38,7 +36,6 @@ void getInput(double &labAvg, double &quizAvg, double &examAvg)
 
 	cout << "\n Enter your Exam Avg: ";
 	cin >> examAvg;
-
 }
 
 char calcAvg(double labAvg, double quizAvg, double examAvg, double &myCalc)
