@@ -7,8 +7,6 @@ char calcAvg(double, double, double, double&);
 void displayInfo(char, double);
 
 
-
-
 int main()
 {
 	
@@ -28,9 +26,6 @@ int main()
 
 	return 0;
 }
-
-
-
 
 void getInput(double &labAvg, double &quizAvg, double &examAvg)
 {
