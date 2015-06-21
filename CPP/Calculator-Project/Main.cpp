@@ -42,4 +42,4 @@ int main()
 	}while(myChoice != '3');
 
 	return 0;
-};
+}

@@ -19,7 +19,6 @@ void addMe()
 	cout << "\n Number 2: ";
 	cin >> num2;
 
-
 	mySum = num1 + num2;
 
 	cout << fixed << setprecision(2)
@@ -27,7 +26,7 @@ void addMe()
 	     << endl << endl
 	     << num1 << " + " << num2
 	     << " = " << mySum << endl;
-};
+}
 
 void multiMe()
 {
