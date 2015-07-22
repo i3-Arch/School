@@ -50,15 +50,15 @@ sub Numba{
 }
 
 sub Stat{
-	print color("white"), "\n  Here is the output of ", color("yellow"), "netstat -tupNa  \n", color("reset");
+	print color("white"), "\n  Here is the output of ", color("yellow"), "ss -tupa  \n", color("reset");
 	print color("green");
-	my ($HUE) = system ("\n  netstat -tupNa > tst023 ; cat tst023 ; rm tst023 2> /dev/null \n");
+	my ($HUE) = system ("\n  ss -tupa > tst023 ; cat tst023 ; rm tst023 2> /dev/null \n");
 	print color("reset");
 }	
 
 sub Pause{
 	local( $| ) = ( 1 );
-	print color("white"), " \n  Press", color("red"), "<Enter>", color("white"), "to stop script: \n\n", color("reset");
+	print color("white"), " \n  Press", color("red"), " < Enter > ", color("white"), "to stop script: \n\n", color("reset");
 	my $resp = <STDIN>;	
 }
 
