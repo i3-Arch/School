@@ -6,7 +6,7 @@
 ############################################################
 
 
-	i. Linux-Class   - Script I created for linux class
+	i. Linux-Class   - Shell script created for linux class
 
 			- The rest is self explanitory
 
