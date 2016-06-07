@@ -39,16 +39,16 @@ myLoop()
 
 myStart()
 {		
-		ip a
-		printf "\033[1m ${white}\n Example: wlp2s0 \n\n\033[0m"
+	ip a
+	printf "\033[1m ${white}\n Example: wlp2s0 \n\n\033[0m"
         printf "\033[1m ${white} Enter Your Wireless Interface: \033[0m"
 		read youriface
-		netctl stop-all
+	netctl stop-all
         airmon-ng start "$youriface"
         ip link set "${youriface}mon" down
         printf "\n\n"
-		macchanger -A "${youriface}mon"
-		ip link set "${youriface}mon" up
+	macchanger -A "${youriface}mon"
+	ip link set "${youriface}mon" up
         printf "\n\n"
 }
 
