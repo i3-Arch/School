@@ -14,7 +14,8 @@ def AskYourAge():
         print ("Exiting now then...") 
         exit()
     else:
-        print ("Invalid option: Defaulting to Yes")
+        print ("Invalid option: Defaulting to No")
+        exit()
     print ()
 
 def CalcAge():
