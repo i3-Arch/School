@@ -1,23 +1,22 @@
 #!/usr/bin/python3
 #
-#  i3-Arch
-#
-# Got bored enough to create this!
-#########################
+#   -[ i3-Arch ]-
+#   Figured I'd play with python some
+import re
 
 def MyBanner():
-        print ("""\n\n\n\n\033[1;34m
-        ######################################
-        ##                                  ## 
-        ##              i3-Arch             ##
-        ##                                  ##
-        ##    https://github.com/i3-Arch    ##
-        ##                                  ##
-        ######################################\n\n\033[1;m""")
-        print ()
+    print ("""\n\n\n\n\033[1;34m
+    ######################################
+    ##                                  ##
+    ##              i3-Arch             ##
+    ##                                  ##
+    ##    https://github.com/i3-Arch    ##
+    ##                                  ##
+    ######################################\n\n\033[1;m""")
+    print ()
 
 def AskYourAge():
-    AskMe = input("\n\n\033[1;37m  Would you like to enter your age? [\033[1;32mY\033[1;37m/\033[1;31mN\033[1;37m]\033[1;37m:\033[1;m") 
+    AskMe = input("\n\n\033[1;37m  Would you like to enter your age? [\033[1;32mY\033[1;37m/\033[1;31mN\033[1;37m]:\033[1;m")
     if AskMe.lower() == 'y':
         global TheVariable
         while True:
@@ -27,7 +26,7 @@ def AskYourAge():
             except (ValueError):
                 print("\n\n\n\033[1;41m  Oops! That was no valid number.\033[1;m\n\n")
     elif AskMe.lower() == 'n':
-        print ("\n\n\033[1;31m  Exiting now then...\033[1;m\n\n") 
+        print ("\n\n\033[1;31m  Exiting now then...\033[1;m\n\n")
         exit()
     else:
         print ("\n\n\033[1;31m  Invalid option: Defaulting to No\033[1;m\n\n")
@@ -53,8 +52,34 @@ def CalcAge():
         print("\033[1;37m  Well, wtf have you entered....\033[1;m")
     print ()
 
+def AskYourName():
+    AskMe2 = input("\n\n\033[1;37m Would you like to enter your name? [\033[1;32mY\033[1;37m/\033[1;31mN\033[1;37m]: \033[1;m")
+    if AskMe2.lower() == 'y':
+        while True:
+            try:
+                YourName = str(input("\033[1;37mPlease enter your name: \033[1;m"))
+                if not re.match("^[aA-zZ]*$", YourName):
+                    print ("\033[1;31m \n\nError! \033[1;37mOnly letters aA-zZ allowed!\033[1;m")
+                elif len(YourName) > 15:
+                    print ("\033[1;31m \n\nError! \033[1;37mOnly 15 characters allowed!\033[1;m")
+                else:
+                    print ("\033[1;37m\n\n Hello\033[1;31m",YourName,"\033[1;37mwhom calims to be \033[1;31m",TheVariable,"\033[1;37mYears old.\033[1;m")
+                break
+            except:
+                print ("\033[1;31mOh no! Something unexpected happened!\033[1;m")
+    elif AskMe2.lower() == 'n': 
+        print ("\033[1;31m\n\n  Exiting now then...\n\033[1;m")
+        print ("\033[1;37m\n\n Good Bye! \n\n\033[1;m")
+        exit()
+    else:
+        print ("\n\n\033[1;31m  Invalid option. Defaulting to No..\033[1;m")
+        print ("\033[1;37m\n\n Good Bye! \n\n\033[1;m")
+        exit()
+    print ()
+
 MyBanner()
 AskYourAge()
 CalcAge()
+AskYourName()
 
 print ("\033[1;37m  Good Bye!\033[1;m")
