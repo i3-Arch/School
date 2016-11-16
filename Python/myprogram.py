@@ -84,5 +84,3 @@ def AskYourName():
 MyBanner()
 AskYourAge()
 AskYourName()
-
-print ("\033[1;37m  Good Bye!\033[1;m")
