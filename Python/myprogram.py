@@ -16,6 +16,7 @@ def MyBanner():
     print ()
 
 def AskYourAge():
+    global AskMe
     AskMe = input("\n\n\033[1;37m  Would you like to enter your age? [\033[1;32mY\033[1;37m/\033[1;31mN\033[1;37m]:\033[1;m")
     if AskMe.lower() == 'y':
         global YourAge
@@ -23,14 +24,14 @@ def AskYourAge():
             try:
                 YourAge = int(input("\n\n\033[1;37m  Enter in your age: \033[1;m"))
                 break
+                CalcAge()
             except (ValueError):
                 print("\n\n\n\033[1;41m  Oops! That was no valid number.\033[1;m\n\n")
     elif AskMe.lower() == 'n':
-        print ("\n\n\033[1;31m  Exiting now then...\033[1;m\n\n")
-        exit()
+        print ("\n\n\033[1;31m  Moving on then...\033[1;m\n\n")
     else:
         print ("\n\n\033[1;31m  Invalid option: Defaulting to No\033[1;m\n\n")
-        exit()
+        print ("\n\n\033[1;37m  Moving on to next question...\033[1;m")
     print ()
 
 def CalcAge():
@@ -57,16 +58,19 @@ def AskYourName():
     if AskMe2.lower() == 'y':
         while True:
             try:
-                YourName = str(input("\033[1;37mPlease enter your name: \033[1;m"))
+                YourName = input("\033[1;37mPlease enter your name: \033[1;m")
                 if not re.match("^[aA-zZ]*$", YourName):
                     print ("\033[1;31m \n\nError! \033[1;37mOnly letters aA-zZ allowed!\033[1;m")
                 elif len(YourName) > 15:
                     print ("\033[1;31m \n\nError! \033[1;37mOnly 15 characters allowed!\033[1;m")
-                else:
+                elif AskMe.lower() == 'y':
                     print ("\033[1;37m\n\n Hello\033[1;31m",YourName,"\033[1;37mwhom calims to be \033[1;31m",YourAge,"\033[1;37mYears old.\033[1;m")
+                else:
+                    print ("\033[1;37m\n\n Hello\033[1;31m",YourName,"\033[1;m")
                 break
-            except:
+            except (ValueError):
                 print ("\033[1;31mOh no! Something unexpected happened!\033[1;m")
+                exit()
     elif AskMe2.lower() == 'n': 
         print ("\033[1;31m\n\n  Exiting now then...\n\033[1;m")
         print ("\033[1;37m\n\n Good Bye! \n\n\033[1;m")
@@ -79,7 +83,6 @@ def AskYourName():
 
 MyBanner()
 AskYourAge()
-CalcAge()
 AskYourName()
 
 print ("\033[1;37m  Good Bye!\033[1;m")
