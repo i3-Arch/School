@@ -58,7 +58,7 @@ void subMe()
 {
 	double num1		= 0.0;
 	double num2		= 0.0;
-	double myDiff	= 0.0;
+	double myDiff		= 0.0;
 
 
 	cout << "\n Enter 2 Numbers to subtract \n"
