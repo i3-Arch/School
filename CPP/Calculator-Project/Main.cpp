@@ -11,7 +11,9 @@ int main()
 	     << "  ##  [2] Multiply    ##" << endl
 	     << "  ##  [3] Subtract    ##" << endl
 		 << "  ##  [4] Find Slope  ##" << endl
-		 << "  ##  [5] Exit        ##" << endl
+		 << "  ##  [5] Squared     ##" << endl
+		 << "  ##  [6] A²+B²=C²    ##" << endl
+		 << "  ##  [7] Exit        ##" << endl
 	     << "  ##                  ##" << endl
 	     << "  ######################" << endl
 	     << "\n\n Choice: ";
@@ -41,6 +43,16 @@ int main()
 		}
 		if(myChoice == '5')
 		{
+			squareMe();
+			myChoice = ' ';
+		}
+		if(myChoice == '6')
+		{
+			pathagMe();
+			myChoice = ' ';
+		}
+		if(myChoice == '7')
+		{
 			cout << " Bye! " << endl;
 		}
 		else
@@ -51,13 +63,15 @@ int main()
 			     << "  ##  [2] Multiply    ##" << endl
         		 << "  ##  [3] Subtract    ##" << endl
 				 << "  ##  [4] Find Slope  ##" << endl
-				 << "  ##  [5] Exit        ##" << endl
+				 << "  ##  [5] Squared     ##" << endl
+				 << "  ##  [6] A²+B²=C²    ##" << endl
+				 << "  ##  [7] Exit        ##" << endl
                  << "  ##                  ##" << endl
 			     << "  ######################" << endl
              	 << "\n\n Choice: ";
       		        cin >> myChoice;
 		}
-	}while(myChoice != '5');
+	}while(myChoice != '7');
 
 	return 0;
 }
