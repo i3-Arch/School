@@ -10,9 +10,9 @@ using std::sqrt;
 
 void addMe()
 {
-	double num1  = 0.0;
-	double num2  = 0.0;
-	double mySum = 0.0;
+	double num1	= 0.0;
+	double num2	= 0.0;
+	double mySum	= 0.0;
 
 
 	cout << "\n Enter 2 Numbers to ADD \n"
@@ -33,8 +33,8 @@ void addMe()
 
 void multiMe()
 {
-	double num1      = 0.0;
-	double num2      = 0.0;
+	double num1	 = 0.0;
+	double num2	 = 0.0;
 	double myProduct = 0.0;
 
 
@@ -56,9 +56,9 @@ void multiMe()
 
 void subMe()
 {
-	double num1		= 0.0;
-	double num2		= 0.0;
-	double myDiff		= 0.0;
+	double num1	= 0.0;
+	double num2	= 0.0;
+	double myDiff	= 0.0;
 
 
 	cout << "\n Enter 2 Numbers to subtract \n"
@@ -79,10 +79,10 @@ void subMe()
 void slopeMe()
 {
 
-	double myX1		= 0.0;
-	double myY1		= 0.0;
-	double myX2		= 0.0;
-	double myY2		= 0.0;
+	double myX1	= 0.0;
+	double myY1	= 0.0;
+	double myX2	= 0.0;
+	double myY2	= 0.0;
 	double mySlope  = 0.0;
 
 	
@@ -129,11 +129,11 @@ void squareMe()
 
 void pathagMe()
 {
-	double myA = 0.0;
-	double myB = 0.0;
-	double myCsq = 0.0;
-	double myAsq = 0.0;
-	double myBsq = 0.0;
+	double myA	= 0.0;
+	double myB	= 0.0;
+	double myCsq	= 0.0;
+	double myAsq	= 0.0;
+	double myBsq	= 0.0;
 
 
 	cout << "\n\n A² + B² = C² \n"
