@@ -63,10 +63,10 @@ void subMe()
 
 	cout << "\n Enter 2 Numbers to subtract \n"
 		 << "\n Number 1: ";
-		 cin >> num1;
+	cin >> num1;
 	
 	cout << "\n Number 2: ";
-		 cin >> num2;
+	cin >> num2;
 
 		myDiff = num1 - num2;
 
@@ -88,19 +88,19 @@ void slopeMe()
 	
 	cout << "\n Enter first X coordinate \n"
 		 << "\n X1: ";
-		 cin >> myX1;
+	cin >> myX1;
 
 	cout << "\n Enter first Y coordinate \n"
 		 << "\n Y1: ";
-		 cin >> myY1;
+	cin >> myY1;
 	
 	cout << "\n Enter second X coordinate \n"
 		 << "\n X2: ";
-		 cin >> myX2;
+	cin >> myX2;
 	
 	cout << "\n Enter second Y coordinate \n"
 		 << "\n Y2: ";
-		 cin >> myY2;
+	cin >> myY2;
 	
 	
 	mySlope = (myY1 - myY2)/(myX1 - myX2);
@@ -119,7 +119,8 @@ void squareMe()
 
 	cout << "\n\n Find number squared \n"
 	     << "\n Enter the Base: ";
-		 cin >> myBase;
+	cin >> myBase;
+	
 	mySquare = (myBase * myBase);
 	cout << fixed << setprecision(2)
 	     << " " << myBase << " squared is " << mySquare << endl;
@@ -137,9 +138,10 @@ void pathagMe()
 
 	cout << "\n\n A² + B² = C² \n"
 		 << "\n Enter A: ";
-         cin >> myA;
+	cin >> myA;
+	
 	cout << "\n Enter B: ";
-		 cin >> myB;
+	cin >> myB;
 
 
 	myAsq = (myA * myA);
