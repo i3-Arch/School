@@ -10,10 +10,10 @@ int main()
 	     << "  ##  [1] Add         ##" << endl
 	     << "  ##  [2] Multiply    ##" << endl
 	     << "  ##  [3] Subtract    ##" << endl
-		 << "  ##  [4] Find Slope  ##" << endl
-		 << "  ##  [5] Squared     ##" << endl
-		 << "  ##  [6] A²+B²=C²    ##" << endl
-		 << "  ##  [7] Exit        ##" << endl
+	     << "  ##  [4] Find Slope  ##" << endl
+	     << "  ##  [5] Squared     ##" << endl
+	     << "  ##  [6] A²+B²=C²    ##" << endl
+	     << "  ##  [7] Exit        ##" << endl
 	     << "  ##                  ##" << endl
 	     << "  ######################" << endl
 	     << "\n\n Choice: ";
@@ -58,15 +58,15 @@ int main()
 		else
 		{
 			cout << "\n  ######################" << endl
-                 << "  ##                  ##" << endl
+                 	     << "  ##                  ##" << endl
 			     << "  ##  [1] Add         ##" << endl
 			     << "  ##  [2] Multiply    ##" << endl
-        		 << "  ##  [3] Subtract    ##" << endl
-				 << "  ##  [4] Find Slope  ##" << endl
-				 << "  ##  [5] Squared     ##" << endl
-				 << "  ##  [6] A²+B²=C²    ##" << endl
-				 << "  ##  [7] Exit        ##" << endl
-                 << "  ##                  ##" << endl
+        		     << "  ##  [3] Subtract    ##" << endl
+			     << "  ##  [4] Find Slope  ##" << endl
+			     << "  ##  [5] Squared     ##" << endl
+			     << "  ##  [6] A²+B²=C²    ##" << endl
+			     << "  ##  [7] Exit        ##" << endl
+                 	     << "  ##                  ##" << endl
 			     << "  ######################" << endl
              	 << "\n\n Choice: ";
       		        cin >> myChoice;
