@@ -21,8 +21,8 @@ int main()
 		     << "  ######################" << endl
 		     << "\n\n Choice: ";
 		
-	    cin >> myChoice;
-		cin.ignore(256, '\n');
+	    	cin >> myChoice;
+	    	cin.ignore(256, '\n');
 
 		switch(myChoice)
 		{
