@@ -11,17 +11,19 @@ ECHO 2 - Open Calculator
 ECHO 3 - Open Notepad AND Calculator
 ECHO 4 - Show Arp Table
 ECHO 5 - Show Mac Address
-ECHO 6 - EXIT
+ECHO 6 - Show Route Table
+ECHO 7 - EXIT
 ECHO.
 
 
-SET /P M=Selection[1-6]:
+SET /P M=Selection[1-7]:
 IF %M%==1 GOTO NOTE
 IF %M%==2 GOTO CALC
 IF %M%==3 GOTO BOTH
 IF %M%==4 GOTO ARP
 IF %M%==5 GOTO MAC
-IF %M%==6 GOTO EOF
+IF %M%==6 GOTO ROUTE
+IF %M%==7 GOTO EOF
 
 
 
@@ -46,6 +48,10 @@ GOTO MENU
 :MAC
 cls
 getmac /v
+GOTO MENU
+:ROUTE
+cls
+route print
 GOTO MENU
 :EOF
 exit
