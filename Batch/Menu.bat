@@ -31,27 +31,33 @@ IF %M%==7 GOTO EOF
 cd %windir%\system32\notepad.exe
 start notepad.exe
 GOTO MENU
+
 :CALC
 cd %windir%\system32\calc.exe
 start calc.exe
 GOTO MENU
+
 :BOTH
 cd %windir%\system32\notepad.exe
 start notepad.exe
 cd %windir%\system32\calc.exe
 start calc.exe
 GOTO MENU
+
 :ARP
 cls
 arp -a
 GOTO MENU
+
 :MAC
 cls
 getmac /v
 GOTO MENU
+
 :ROUTE
 cls
 route print
 GOTO MENU
+
 :EOF
 exit
